@@ -8,7 +8,8 @@ we get `import`, `export` and sourcemaps.
 
 ## Getting Started
 
-In the checkout directory, run a command like this:
+Make an `ext` folder that links to your Ext JS download content. In the
+checkout directory, run a command like this:
 
     $ ln -s ../../sdks/ext-6.5.3 ext
 
@@ -16,9 +17,7 @@ On Windows:
 
     > mklink /D ext ..\..\sdks\ext-6.5.3
 
-The goal is to have an `ext` folder that links to your Ext JS download content.
-
-The run
+Then run `npm run build`:
 
     $ npm run build
 
@@ -35,7 +34,7 @@ The run
     [./src/app.js] 300 bytes {main} [built]
     [./src/view/Main.js] 245 bytes {main} [built]
 
-Load in browser.
+That's all. Now load in browser.
 
 ## Linking It Up
 
@@ -103,3 +102,5 @@ call the `Panel` super class.
 
 Using Sencha Themer would be great partner here. Just build your theme and link
 it in via the index file.
+
+I'd love to hear what folks think of this approach!
